@@ -1,39 +1,52 @@
 ﻿ <!DOCTYPE html>
-<html lang="ru" onLoad = "initsnow()">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>KorvusTehnology | Главная</title>
-      <link rel="icon" type="image/png" href="img/server-icon.jpg" sizes="32x32">
-      <link rel="stylesheet" href="css/bootstrap.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/style.css">
-	</head>
-         </div>
-   <body onLoad = "initsnow()">
+<html lang="ru">
+<head>
+	<link rel="icon" type="image/png" href="img/server-icon.jpg" sizes="32x32">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UniversalStudio | Возможности доната</title>
+	
+    <meta name="keywords" content="скины, установка, майнкрафт, minecraft, tlauncher"/>
+    <meta name="description" content="Хотите выделится на сервере? Тогда прочитайте наилучший гайд по установке скинов в Minecraft с помощью TLauncher"/>
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+	  <style>
+   .text2 {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 13pt; /* Размер шрифта в пунктах */ 
+   }
+  </style>
+</head>
+<body>
+	  <!--Добавление меню с бд-->	
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <div class="container">
             <div class="navbar-header">
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
-               <a class="navbar-brand mb-0 h1" href="/">Korvus Tehnology</a>
+               <a class="navbar-brand mb-0 h1" href="/">KorvusTehnology</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav">
                   <li class="nav-item">
-                     <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a>
+                     <a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true"></i> Главная</a>
                   </li>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="contacts.html"><i class="fas fa-address-book"></i> Контакты</a>
+                     <a class="nav-link" href="contacts"><i class="fas fa-address-book"></i> Контакты</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lg" href><i class="fas fa-question-circle"></i> Правила</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="buy.html"><i class="fas fa-gem"></i> Возможности доната</a>
+                     <a class="nav-link" href="buy"><i class="fas fa-gem"></i> Возможности доната</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link welcome">IP - 188.243.165.42</a>
@@ -50,7 +63,7 @@
     <div class="modal-content">
 
       <div class="modal-header">
-        <h5 class="modal-title h4" id="myLargeModalLabel"><i class="fas fa-question-circle"></i> Правила проекта KorvusTehnology</h5>
+        <h5 class="modal-title h4" id="myLargeModalLabel"><i class="fas fa-question-circle"></i> Правила проекта UniversalStudio</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
@@ -227,117 +240,120 @@
     </div>
   </div>
 </div>
-</div>      <div class="content">
-      <div class="jumbotron jumbotron-fluid text-center">
-         <div class="container">
-            <h1 class="welcome">Сайт проекта Korvus Tehno</h1>
-            <p>«#korvusbest» </h1>Перед покупкой используйте промокод на 10% скидочку</h1> </p>
-            <div class="bd-example" onLoad = "initsnow()">
-                        <h5></h5>
-                        <p></p>
-                        </div>
-      <div class="jumbotron jumbotron-fluid text-center">
-         <div class="container">
-            <h5 class="lifedrop"><i class="fas fa-life-ring"></i> Последние покупки</h5>
-            <div class="card-deck justify-content-center" id="life"></div>
-                        <h6 class="timedrop">(Всего 1 покупок, выдано 1/1)</h6>
-                        </div>
-						</div>
-						</div>
-      <div class="container">
-         <div class="row">
-            <ul class="nav nav-pills mb-3 col-md-12 justify-content-center" id="pills-tab" role="tablist">
-               <li class="nav-item">
-                  <a class="nav-link active show" id="pills-donate-tab" data-toggle="pill" href="#pills-donate" role="tab" aria-controls="pills-home" aria-selected="false">Привилегии</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" id="pills-cases-tab" data-toggle="pill" href="#pills-cases" role="tab" aria-controls="pills-profile" aria-selected="false">Кейсы</a>
-               </li>
-               <li class="nav-item">
-               </li>
-               </li>
-            </ul>
-            <div class="tab-content col-md-6 col-xs-12 mx-auto" id="pills-tabContent">
-               <div class="tab-pane fade show active" id="pills-donate" role="tabpanel" aria-labelledby="pills-donate-tab">
-                  <form action="donate/buy.php" method="post" id="groups">
-                     <div class="form-group">
-                        <label for="nickname">Введите свой ник:</label>
-                        <input type="text" class="form-control" name="nickname" id="groupName" placeholder="Введите свой ник" required>              
-                     </div>
-                     <div class="form-group">
-                        <label for="group">Выберите нужный статус:</label>
-                        <select name="group" id="group" class="form-control">
-                                                                                 <option value="vip">«Holly» - 12 рублей</option>
-                                                      <option value="elite">«Paladin» - 39 рублей</option>
-                                                      <option value="admin">«Master» - 119 рублей</option>
-                                                      <option value="lord">«Gladiator» - 239 рублей</option>
-                                                      <option value="legend">«Overlord» - 549 рублей</option>
-													  <option value="legend">«Elder» - 799 рублей</option>
-													  <option value="legend">«Phantom» - 1199 рублей</option>
-													  <option value="legend">«King» - 1599 рублей</option>
-                                                   </select>
-                        <br>
-                     </div>
-                     <div class="text-center">
-                        <input type="submit" class="btn bnt-new btn-lg btn-block" value = "Купить"/>
-                     </div>
-                  </form>
-               </div>
-               <div class="tab-pane fade" id="pills-cases" role="tabpanel" aria-labelledby="pills-cases-tab">
-                  <form action="donate/buy.php" method="post" id="cases">
-                     <div class="form-group">
-                        <label for="nickname">Введите свой ник:</label>
-                        <input type="text" class="form-control" name="nickname" placeholder="Введите свой ник" required>              
-                     </div>
-                     <div class="form-group">
-                        <label for="status">Выберите нужный статус:</label>
-                        <select name="case" id="status" class="form-control">
-                                                                                 <option value="case">1 кейс с донатом - 49 рублей</option>
-																				 <option value="case">3 кейса с донатом - 89 рублей</option>
-																				 <option value="case">5 кейсов с донатом - 129 рублей</option>
-																				 <option value="case">10 кейсов с донатом - 159 рублей</option>
-                                                   </select>
-                     </div>
-                     <div class="text-center"><input type="submit" value="Купить" class="btn bnt-new btn-lg btn-block"></div>
-                  </form>
-               </div>
-               <div class="tab-pane fade" id="pills-money" role="tabpanel" aria-labelledby="pills-money-tab">
-                  <form action="donate/buy.php" method="post">
-                     <div class="form-group">
-                        <label for="nickname">Ник на сервере:</label>
-                        <input type="text" class="form-control" name="nickname" placeholder="Введите свой ник" required>              
-                     </div>
-                     <div class="form-group">
-                        <label for="status">Выберите нужное кол-во монеток:</label>
-                        <select name="coin" class="form-control">
-                                                                              </select>
-                     </div>
-                     <div class="text-center"><input type="submit" value="Купить" class="btn bnt-new btn-lg btn-block"></div>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
-      <footer></footer>
-      <script src="js/jquery-2.2.0.min.js"></script>
-      <script src="js/bootstrap.js"></script>
-      <script src="js/common.js?v=1.1"></script>
-      <script>
-         function show()
-         {
-             $.ajax({
-                 url: "live.php", // Путь к php скрипту который будет загружать заголовки
-                 cache: false,
-                 success: function(html){
-                     $("#life").html(html); // Блок куда будем выводить информацию
-                 }
-             });
-         }
-         
-         $(document).ready(function(){
-             show();
-             setInterval(show, 5000); // Интервал обновления в миллисекундах 
-         });
-      </script>
-   </body>
+</div>
+
+<div class="content">
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="welcome"><i class="fas fa-gem"></i> Возможности доната</h1>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 d-flex justify-content-center">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active show" id="pills-holly-tab" data-toggle="pill" href="#pills-holly" role="tab" aria-controls="pills-home" aria-selected="true">«Holly»</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-paladin-tab" data-toggle="pill" href="#pills-paladin" role="tab" aria-controls="pills-profile" aria-selected="false">«Paladin»</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-master-tab" data-toggle="pill" href="#pills-master" role="tab" aria-controls="pills-contact" aria-selected="false">«Master»</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-gladiator-tab" data-toggle="pill" href="#pills-gladiator" role="tab" aria-controls="pills-contact" aria-selected="false">«Gladiator»</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-overlord-tab" data-toggle="pill" href="#pills-overlord" role="tab" aria-controls="pills-contact" aria-selected="false">«Overlord»</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-elder-tab" data-toggle="pill" href="#pills-elder" role="tab" aria-controls="pills-contact" aria-selected="false">«Elder»</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-phantom-tab" data-toggle="pill" href="#pills-phantom" role="tab" aria-controls="pills-contact" aria-selected="false">«Phantom»</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-king-tab" data-toggle="pill" href="#pills-king" role="tab" aria-controls="pills-contact" aria-selected="false">«King»</a>
+
+</ul>
+</div>
+
+<div class="col-xs-12 col-md-12 d-flex justify-content-center">
+<div class="tab-content " id="pills-tabContent">
+  
+  <div class="tab-pane fade active show" id="pills-holly" role="tabpanel" aria-labelledby="pills-holly-tab">
+<div><b>Возможности группы на сервере:</b></div>
+<img src="img/holly.png">
+  </div>
+  
+  <div class="tab-pane fade" id="pills-paladin" role="tabpanel" aria-labelledby="pills-paladin-tab">
+<div><b>Возможности группы на сервере:</b></div>
+<img src="img/paladin.png">
+  </div>
+  
+  <div class="tab-pane fade" id="pills-master" role="tabpanel" aria-labelledby="pills-master-tab">
+<div><b>Возможности группы на сервере:</b></div>
+<img src="img/master.png">
+  </div>
+ 
+  <div class="tab-pane fade" id="pills-gladiator" role="tabpanel" aria-labelledby="pills-gladiator-tab">
+<div><b>Возможности группы на сервере:</b></div>
+<img src="img/gladiator.png">
+  </div>
+  
+  <div class="tab-pane fade" id="pills-overlord" role="tabpanel" aria-labelledby="pills-overlord-tab">
+<div><b>Возможности группы на сервере:</b></div>
+<img src="img/overlord.png">
+  </div>
+
+  <div class="tab-pane fade" id="pills-elder" role="tabpanel" aria-labelledby="pills-elder-tab">
+<div><b>Возможности группы на сервере:</b></div>
+<img src="img/elder.png">
+  </div>
+
+  <div class="tab-pane fade" id="pills-phantom" role="tabpanel" aria-labelledby="pills-phantom-tab">
+<div><b>Возможности группы на сервере:</b></div>
+<img src="img/phantom.png">
+  </div>
+
+  <div class="tab-pane fade" id="pills-king" role="tabpanel" aria-labelledby="pills-king-tab"><div>
+<div><b>Возможности группы на сервере:</b></div>
+<img src="img/king.png">
+  </div>
+
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+
+ </div>
+</div>
+</div>
+
+
+<footer class="footer"></footer>
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+  $("#myTabs a").click(function(e) {
+    e.preventDefault();
+    $(this).tab("show");
+  });
+</script>
+<script src="js/common.js?v=1.1"></script>
+<script type="text/javascript">
+	var visible = false;
+	$("#showPromo").click(function() {
+		if (visible) {
+	        document.getElementById('promoblock').style.display = 'none';
+	        visible = false;
+	    } else {
+	        document.getElementById('promoblock').style.display = 'block';
+	        visible = true;
+	    }
+	});
+</script>
+</body>
 </html>
