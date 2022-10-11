@@ -1,1 +1,97 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donate</title>
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="_container">
+                <div class="nav__logo">
+                    <img src="https://svclookup.com.au/Uploads/X/201906/logo-c15cd84a-bab8-41cd-9ae5-07607c01ddb8.png">
+                </div>
+                <div class="nav__list">
+                    <a class="nav__list-item" href="https://vk.com/">Группа ВК</a>
+                    <a class="nav__list-item" modal-open="rules">Правила</a>
+                </div>
+                <div class="nav__control">
+                    <div class="nav__control-item nav__control-online">
+                        <img src="./assets/images/icons/activity.svg" class="nav__control-online__icon">
+                        <div class="nav__control-online__info">
+                            <p class="nav__control-online__hover">Нажмите, чтобы скопировать айпи</p>
+                            <p class="nav__control-online__ip">188.243.165.42</p>
+                            <p class="nav__control-online__status">Онлайн: <span id="server0" class="nav__control-online__checked">10</span></p>
+                        </div>
+                    </div>
+                    <div class="nav__control-item nav__control-theme" theme>
+                        <img src="./assets/images/icons/moon.svg" class="nav__control-theme__icon">
+                    </div>
+                    <div class="nav__control-item nav__control-burger">
+                        <div class="nav__control-burger__line nav__control-burger__line1"></div>
+                        <div class="nav__control-burger__line nav__control-burger__line2"></div>
+                        <div class="nav__control-burger__line nav__control-burger__line3"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="news">
+            <div class="_container">
+                <h3 class="news__title textstyle__title">О нас</h3>
+                <div class="news__content">
+                   <div class="news__info">
+                       <span class="textstyle__title">KorvusTehno</span> <br>
+                       Мы первые, которые сделали уникальный анархический сервер у которых ни у кого нету!<br>
+                       Чё ты завис? Скопируй айпи и зайди уже на сервер!
+                   </div>
+                   <div class="news__image">
+                       <img src="https://i.gifer.com/47tv.gif">
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__nav">
+                <div class="_container">
+                    <div class="footer__logo">
+                        <img src="https://svclookup.com.au/Uploads/X/201906/logo-c15cd84a-bab8-41cd-9ae5-07607c01ddb8.png">
+                    </div>
+                    <div class="footer__list">
+                        <div class="nav__list-item">Группа ВК</div>
+                        <div class="nav__list-item">Правила</div>
+                    </div>
+                    <div class="footer__up">
+                        <img src="./assets/images/icons/arrow-up.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="_container">
+                    <p class="footer__copyright-text">
+                        Copyright 2022 (Все права защищены)<br>
+                        Сервер никак не относится к Mojang, AB.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+        <div modal-item="rules" class="_container modals__item">
+            <div class="modals__title">Правила сервера</div>
+
+            <p class="modals__text">Какие то правила сервера</p>
+            <div modal-close class="modals__close">
+                <div class="modals__close-line"></div>
+                <div class="modals__close-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/scripts/main.js"></script>
+</body>
+</html>
